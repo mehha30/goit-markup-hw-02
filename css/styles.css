@@ -1,0 +1,18 @@
+
+.logo{
+    color: #2E2F42;
+}
+.web{
+    color: #4D5AE5;
+}
+.site-nav .link{
+    color: #2E2F42;
+}
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color: black;
+}
+/* колір основго тексту
+/* колір вториний 
+/* білий
+/* 
