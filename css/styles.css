@@ -25,6 +25,9 @@ li {
 .header-list {
 
 }
+.header-list:active,:hover,:focus{
+    color: #404BBF;
+}
 
 .header-item {
 
