@@ -31,7 +31,6 @@ li {
 }
 
 .header-link {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -48,7 +47,6 @@ li {
 }
 
 .header-mail {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -60,7 +58,6 @@ li {
     color: #404BBF;
 }
 .header-tel {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -75,7 +72,6 @@ li {
     background: #2E2F42;
 }
 .hero-headline{
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
@@ -85,7 +81,6 @@ li {
     color: #FFFFFF;
 }
 .hero-btn{
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -100,7 +95,6 @@ li {
     color: #404BBF;
 }
 .hero-title{
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -109,7 +103,6 @@ li {
     color: #2E2F42;
 }
 .hero-text{
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -118,7 +111,6 @@ li {
     color: #434455;
 }
 .main{
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -129,7 +121,6 @@ li {
     color: #2E2F42;
 }
 .section-fon{
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -144,7 +135,6 @@ li {
 }
 
 .section-title {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -154,7 +144,6 @@ li {
 }
 
 .section-text {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -175,7 +164,6 @@ li {
 }
 
 .footer-text {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -187,12 +175,14 @@ li {
     
 }
 
-.btn-boss {
-    background: #404BBF;
-}
-
 .btn-item {
-    background: #F4F4FD;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--btn-text-color);
+    background: var(--filters-button-background);
+    cursor: pointer;
 }
 
 .apps {
@@ -204,7 +194,6 @@ li {
 }
 
 .apps-title {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -214,7 +203,6 @@ li {
 }
 
 .apps-text {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
