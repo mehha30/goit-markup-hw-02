@@ -1,10 +1,10 @@
 body {
-    font-family: Roboto,sans-serif;
-    
-    font-style: normal;
+    font-family: "Roboto",sans-serif;
+    color: #2E2F42;
+    background-color: white;
 }
 :root{
-    --secondary-font:Raleway,sans-serif;
+    --secondary-font:"Raleway",sans-serif;
     --iris:#4D5AE5;
     --ocean:#404BBF;
     --navy-blue:#2E2F42;
@@ -36,6 +36,7 @@ li {
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: var(--navy-blue);
 }
 .header {
@@ -111,6 +112,7 @@ li {
     color:var(--white);
 }
 .hero-btn{
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -140,6 +142,9 @@ li {
     color:var(--slate);
 }
 .main{
+    background-color: #FFFFFF;
+}
+.main-text{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -196,6 +201,7 @@ li {
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: var(--cloud);
 }
 
@@ -209,22 +215,9 @@ li {
 .btn {
     
 }
-.btn-boss{
 
-}
-.btn-boss-text{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--white);
-    border: 1px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    background: var(--iris);
-    cursor: pointer;
-}
 .btn-item-text{
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -234,6 +227,15 @@ li {
     text-transform: uppercase;
     cursor: pointer;
     background: var(--cloud);
+}
+.btn-item-text:hover{
+    font-family: 'Roboto';
+    background-color: var(--ocean);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
 }
 .btn-item {
 
