@@ -31,7 +31,7 @@
     /* logo */
     --font-weight-regular: 400;
     /* regular */
-    --font-weight-bold: 600;
+    --font-weight-bold: 500;
     /* bold */
 
     /* FONT SIZES */
@@ -39,11 +39,11 @@
     /* logo */
     --font-size-body: 16px;
     /* body */
-    --font-size-h1: 56px;
+    --font-size-hero-tile: 56px;
     /* h1, hero, title */
-    --font-size-h2: 36px;
+    --font-size-section-top-title: 36px;
     /* h2 */
-    --font-size-h3: 20px;
+    --font-size-title: 20px;
     /* h3 */
     --font-size-small: 12px;
     /* small */
@@ -57,11 +57,11 @@
     /* LINE HEIGHT */
     --line-height-logo: 1.33;
     /* logo */
-    --line-height-h1: 1.07;
+    --line-height-hero-tile: 1.07;
     /* h1, hero, title */
-    --line-height-h2: 0.67;
+    --line-height-section-top-title: 0.67;
     /* h2 */
-    --line-height-h3: 1.2;
+    --line-height-title: 1.2;
     /* h3 */
     --line-height-small: 1.33;
     /* small */
@@ -90,29 +90,22 @@ h4,
 h5,
 h6,
 ul,
-p {
-    margin: 0;
-    padding: 0;
-}
-
-/* B3 MARGIN RESET FOR INLINE ELEMENTS */
+p,
 a,
 b,
-button,
-br,
-img,
-span {
-    margin-left: 0;
-    margin-right: 0;
+span{
+    margin: 0;
+    padding: 0;
 }
 
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 body {
-    background: var(--color-primary-background);
+    background:#ffffff;
     color: var(--color-body-text);
     font-family: var(--font-primary);
     font-size: var(--font-size-body);
@@ -148,7 +141,7 @@ body {
 
 /*-- B7, B8 CONTENT CENTER */
 .container {
-    width: 1440px;
+    width: 1158px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -175,7 +168,6 @@ body {
 
 .header-container {
     display: flex;
-    justify-content: space-between;
 }
 
 .header-nav {
@@ -210,21 +202,25 @@ body {
     margin-right: 76px;
 }
 
+.address{
+    margin: auto;
+}
+
 .header-list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .header-item {
     color: var(--color-dark);
     font-weight: var(--font-weight-bold);
     text-decoration: none;
-    margin: 0px 40px 0px 0px;
     padding: 24px 0px;
 }
 
 .contacts-list {
     display: flex;
-    margin-left: auto;
     align-items: center;
 }
 
@@ -272,15 +268,16 @@ body {
 
 .hero-headline {
     color: var(--color-primary-background);
-    font-size: var(--font-size-h1);
+    font-size: var(--font-size-hero-tile);
     font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-h1);
+    line-height: var(--line-height-hero-tile);
     margin: 0 auto;
     margin-bottom: 48px;
     max-width: 492px;
 }
 
 .hero-btn {
+    font-family: var(--font-primary);
     background-color: var(--color-primary-brand);
     border-radius: 4px;
     border: 1px solid var(--color-primary-brand);
@@ -306,30 +303,39 @@ body {
 .advantages-list-item:last-child {
     margin-right: 0px;
 }
-
-.h1 {
+/*-- h1 --*/
+.hero-tile {
     color: var(--color-primary-background);
-    font-size: var(--font-size-h1);
+    font-size: var(--font-size-hero-tile);
     font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-h1);
+    line-height: var(--line-height-hero-tile);
 }
-
-.h2 {
-    font-size: var(--font-size-h2);
-    font-weight: var(--font-weight-bold);
-}
-
-.h3 {
-    font-size: var(--font-size-h3);
-    font-weight: var(--font-weight-bold);
-    line-height: 1.2;
-    margin-bottom: 8px;
+/*-- h2 --*/
+.section-top-title {
+    font-size: var(--font-size-section-top-title);
+    font-weight: 700;
+    line-height: var(--line-height-title);
+    text-align: center;
     letter-spacing: 0.02em;
+    color: var(--color-dark);
+}
+/*-- h3 --*/
+.title {
+    color: var(--color-dark);
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-title);
+    margin-bottom: 8px;
+    letter-spacing: var(--letter-spacing-primary);
 }
 
 /*-- SECTIONS --*/
 /* ADVENTAGES */
 .advantages-description {
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-bold);
+    letter-spacing: var(--letter-spacing-primary);
     line-height: 1.5;
 }
 
@@ -407,10 +413,17 @@ body {
 .portfolio-card-wrapper {
     border-top: none;
     border-bottom: 0.5px solid var(--color-light-mode-background);
-    color: var(--title-color);
     padding: 32px 16px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-text{
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-bold);
+    letter-spacing: 0.02em;
+    color: var(--color-body-text);
 }
 
 .portfolio-title {
@@ -439,6 +452,7 @@ body {
 
 /*-- HERO BUTTON --*/
 .btn {
+    font-family: var(--font-primary);
     align-items: center;
     border-radius: 4px;
     cursor: pointer;
@@ -454,7 +468,6 @@ body {
 }
 
 .portfolio-btn {
-    background-color: var(--color-light-mode-background);
     border: 1px solid var(--color-light-mode-background);
     color: var(--color-primary-brand);
     width: auto;
