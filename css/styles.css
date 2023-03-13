@@ -463,9 +463,9 @@ body {
 }
 
 .portfolio-card-wrapper {
-    border-bottom: 0.5px solid var(--color-light-mode-background);
-    border-left: 0.5px solid var(--color-light-mode-background);
-    border-right: 0.5px solid var(--color-light-mode-background);
+    border-bottom: 1px solid #E7E9FC;
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
     padding: 32px 16px;
 }
 
