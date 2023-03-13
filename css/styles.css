@@ -243,8 +243,8 @@ body {
 }
 
 .current,
-.nav-list-item:hover,
-.nav-list-item:focus,
+.header-item:hover,
+.header-item:focus,
 .contacts-list-item:hover,
 .contacts-list-item:focus {
     color: var(--color-primary-brand);
@@ -262,6 +262,10 @@ body {
     background-color: var(--color-dark);
     color: var(--color-primary-background);
     padding: 192px 0px;
+    flex-grow: 1;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7) ,rgba(46, 47, 66, 0.7) ), url(../images/background/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero-container {
@@ -440,14 +444,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin-right: -24px;
-    margin-bottom: -48px;
+    gap: 24px;
 }
 
 .portfolio-card {
     margin-bottom: 48px;
-    margin-right: 24px;
     width: 360px;
+    border: 1px solid #E7E9FC;
 }
 
 /*-- HERO BUTTON --*/
@@ -475,6 +478,7 @@ body {
     border: 1px solid var(--color-light-mode-background);
     color: var(--color-primary-brand);
     width: auto;
+    background-color: #F4F4FD;
 }
 
 .portfolio-btn:hover,
